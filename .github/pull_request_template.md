@@ -19,7 +19,8 @@ Please include:
   - [ ] Code comments
   - [ ] README / Wiki
   - [ ] API Docs / Swagger / Postman
-- [ ] Config or environment changes
+- [ ] Infrastructure Changes (Terraform)
+- [ ] Data Migration Script
 
 ---
 
@@ -29,10 +30,9 @@ Please include:
 - [ ] No configuration changes
 - [ ] Yes — details below:
 
-**Environments affected:**  
-- [ ] Development – Already Applied  
-- [ ] Staging – Already Applied  
-- [ ] Production – Already Applied  
+**Responsibility:**  
+- [ ] I am responsible and I have already made the configuration changes everywhere (Dev/Staging/Production)
+- [ ] Reviewer is responsible and has changes to make
 
 **Changes need to be made in:**  
 - [ ] GitHub repo settings or secrets  
@@ -53,7 +53,6 @@ Please include:
 **Automated Testing:**
 - [ ] Unit tests added/updated
 - [ ] Integration/E2E tests added/updated
-- [ ] Tests pass in CI pipeline
 
 ---
 
@@ -68,16 +67,16 @@ Please include:
 ## 🔗 Related Work
 
 Link any:
-- GitHub Issues: #123
-- Jira Tickets: `PROJ-456`
+- Related GitHub Pull Requests: #123
 - Docs or diagrams: Link here
 
 ---
 
 ## 📋 Ready for Review Checklist
 
-- [ ] Code builds and passes linting
-- [ ] Tests are passing
-- [ ] Documentation updated
+- [ ] I have confirmed that this meets all the requirements on the JIRA work item
+- [ ] Sign off user has approved or no end-user confirmation needed
+- [ ] I have informed Alexander & Matthew 
 - [ ] Configuration changes are documented/applied
 - [ ] No secrets, passwords, or sensitive data committed
+- [ ] Data Migration tasks have been created as JIRA tickets or already completed
