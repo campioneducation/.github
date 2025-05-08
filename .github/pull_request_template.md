@@ -76,7 +76,6 @@ Link any:
 
 - [ ] I have confirmed that this meets all the requirements on the JIRA work item
 - [ ] Sign off user has approved or no end-user confirmation needed
-- [ ] I have informed Alexander & Matthew 
 - [ ] Configuration changes are documented/applied
 - [ ] No secrets, passwords, or sensitive data committed
 - [ ] Data Migration tasks have been created as JIRA tickets or already completed
