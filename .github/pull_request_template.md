@@ -75,7 +75,8 @@ Link any:
 ## 📋 Ready for Review Checklist
 
 - [ ] I have confirmed that this meets all the requirements on the JIRA work item
-- [ ] Sign off user has approved or no end-user confirmation needed
+- [ ] **Sign off user has approved**
+- [ ] **Demo to the Sign off user**
 - [ ] Configuration changes are documented/applied
 - [ ] No secrets, passwords, or sensitive data committed
 - [ ] Data Migration tasks have been created as JIRA tickets or already completed
