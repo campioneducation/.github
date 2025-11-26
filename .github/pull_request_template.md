@@ -1,82 +1,42 @@
-## 📝 Summary
-
+## 📝 Summary WEB-XXXX
 **What’s changing and why?**  
-(Explain the purpose of this PR. Be specific — help reviewers understand the context.)
+<!-- Explain the purpose of this PR in 2–5 sentences so reviewers understand the context.
 
 Please include:
 - What problem is being solved?
-- Motivation behind the change?
-- Are you fixing a bug, adding a feature, refactoring?
-- Why is this the chosen approach?
-
----
-
-## ✅ What Was Done
-
-- [ ] Code changes (feature, fix, refactor, etc.)
-- [ ] UI changes (include screenshots if relevant)
-- [ ] Documentation updates
-  - [ ] Code comments
-  - [ ] README / Wiki
-  - [ ] API Docs / Swagger / Postman
-- [ ] Infrastructure Changes (Terraform)
-- [ ] Data Migration Script
-
----
-
-## 🛠️ Configuration Changes
-
-**Are config/environment changes required?**
-- [ ] No configuration changes
-- [ ] Yes — details below:
-
-**Responsibility:**  
-- [ ] I am responsible and I have already made the configuration changes everywhere (Dev/Staging/Production)
-- [ ] Reviewer is responsible and has changes to make
-
-**Changes need to be made in:**  
-- [ ] GitHub repo settings or secrets  
-- [ ] Azure Key Vault  
-- [ ] Terraform  
-- [ ] Octopus Deploy  
-- [ ] Other (please specify): `_________________________`
-
-> Example: New API key added to Key Vault and referenced in Terraform output for staging & production.
-
----
-
-## 🔍 How It Was Tested
-
-**Manual Testing:**
-(What was manually tested? Include tools, devices, and scenarios.)
-
-**Automated Testing:**
-- [ ] Unit tests added/updated
-- [ ] Integration/E2E tests added/updated
+- Is this a bugfix, feature, refactor, or cleanup?
+- Why is this approach being used over obvious alternatives?
+- Any relevant background links (JIRA ticket, design doc, etc.) -->
 
 ---
 
 ## ⚠️ Risks & Notes
+<!-- Enter in details here - or delete section if not required. Delete bullets that don’t apply, don’t leave them half-filled. -->
+<!-- If there are **no meaningful risks**, write `None` so reviewers know you thought about it. -->
+<!-- First person to see this and type into the dev channel "all your base are belong to us" leaves an hour early  -->
 
-**Any risks, side effects, or special notes for reviewers?**
-
-> Example: Refactored shared validation logic — could impact other forms. Please test login, registration, and profile updates.
+- ‼️ **Breaking change**: API / contract is not backwards compatible  
+  - <!-- e.g. removed field X, changed response Y -->
+- 🔃 Dependant on Pull Request: xxxx
+- 🧪 QA Notes:
+  - 🚪 Entry point: <!-- e.g. Eco Admin UI → Schools → Edit -->
+  - 🎯 Only used by: <!-- e.g. MyConnect2 Reader → Sync -->
+  - 🔁 Regression to check: <!-- e.g. School Publish flow, Trading Accounts -->
+  - 🔐 Requires role/permission: <!-- e.g. OrgAdmin, Teacher -->
+  - 🧩 Feature flag / config: <!-- e.g. Eco.NewCheckoutFlow ON -->
+  - 📊 Data required: <!-- e.g. Needs Bookmaster LOBCUS in DEV -->
+  - 🔗 Integration touched: <!-- e.g. hits ServiceBus topic ordersync -->
+ 
+  
 
 ---
 
-## 🔗 Related Work
-
-Link any:
-- Related GitHub Pull Requests: #123
-- Docs or diagrams: Link here
+## 🛠️ Configuration / Infrastructure Changes:
+<!-- Enter in details here - or delete section if not required. -->
 
 ---
 
 ## 📋 Ready for Review Checklist
 
-- [ ] I have confirmed that this meets all the requirements on the JIRA work item
-- [ ] **Sign off user has approved**
-- [ ] **Demo to the Sign off user**
-- [ ] Configuration changes are documented/applied
-- [ ] No secrets, passwords, or sensitive data committed
-- [ ] Data Migration tasks have been created as JIRA tickets or already completed
+- [ ] Meets **all** JIRA acceptance criteria  
+- [ ] **Demoed to the Sign off user** - if required
