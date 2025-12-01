@@ -1,19 +1,22 @@
 ## 📝 Summary WEB-XXXX
 **What’s changing and why?**  
-<!-- Explain the purpose of this PR in 2–5 sentences so reviewers understand the context.
+<!-- 
+
+Explain the purpose of this PR in 2–5 sentences so reviewers understand the context.
 
 Please include:
 - What problem is being solved?
 - Is this a bugfix, feature, refactor, or cleanup?
 - Why is this approach being used over obvious alternatives?
-- Any relevant background links (JIRA ticket, design doc, etc.) -->
+- Any relevant background links (JIRA ticket, design doc, etc.) 
+
+-->
 
 ---
 
 ## ⚠️ Risks & Notes
 <!-- Enter in details here - or delete section if not required. Delete bullets that don’t apply, don’t leave them half-filled. -->
 <!-- If there are **no meaningful risks**, write `None` so reviewers know you thought about it. -->
-<!-- First person to see this and type into the dev channel "all your base are belong to us" leaves an hour early  -->
 
 - ‼️ **Breaking change**: API / contract is not backwards compatible  
   - <!-- e.g. removed field X, changed response Y -->
