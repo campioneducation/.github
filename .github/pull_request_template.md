@@ -42,4 +42,4 @@ Please include:
 ## 📋 Ready for Review Checklist
 
 - [ ] Meets **all** JIRA acceptance criteria  
-- [ ] **Demoed to the Sign off user** - if required
+- [ ] **Demoed / Approved by the BA Sign off user** 
