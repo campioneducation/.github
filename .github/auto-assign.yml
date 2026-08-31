@@ -1,0 +1,48 @@
+name: Assign Reviewer as Assignee
+
+on:
+  workflow_call:
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/github-script@v8
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const pull_number = context.payload.pull_request.number;
+
+            let reviewer = context.payload.requested_reviewer?.login;
+
+            // If triggered by PR opening or a team review request,
+            // ask GitHub who the currently selected individual reviewers are.
+            if (!reviewer) {
+              const { data } = await github.rest.pulls.listRequestedReviewers({
+                owner,
+                repo,
+                pull_number
+              });
+
+              reviewer = data.users
+                .filter(user => user.type === "User")
+                .find(user =>
+                  user.login !== context.payload.pull_request.user.login
+                )?.login;
+            }
+
+            if (!reviewer) {
+              console.log("No individual reviewer found.");
+              return;
+            }
+
+            console.log(`Assigning ${reviewer} to PR #${pull_number}`);
+
+            await github.rest.issues.addAssignees({
+              owner,
+              repo,
+              issue_number: pull_number,
+              assignees: [reviewer]
+            });
