@@ -8,6 +8,8 @@
 
 <!-- How can this be tested? Include any roles, flags, test data or regression areas. -->
 
+Ensure that QA Notes are posted back onto the JIRA ticket. 
+
 ---
 
 ### ⚠️ Risks / Dependencies
